@@ -5,8 +5,8 @@ public class Car extends Vehicle {
 	private String color;
 	
 
-	public Car(int numberOfWheels, String name, boolean isRaceCar, String color) {
-		super(numberOfWheels, name, isRaceCar);
+	public Car(int numberOfWheels, String name, int numOfDoors, String color) {
+		super(numberOfWheels, name, numOfDoors);
 		this.setColor(color);
 
 	}

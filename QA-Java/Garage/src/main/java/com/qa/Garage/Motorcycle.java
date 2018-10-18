@@ -3,8 +3,8 @@ package com.qa.Garage;
 public class Motorcycle extends Vehicle{
 	private int numberOfDials;
 	
-	public Motorcycle(int numberOfWheels, String name, boolean isRaceCar, int numberOfDials) {
-		super(numberOfWheels, name, isRaceCar);
+	public Motorcycle(int numberOfWheels, String name, int numOfDoors, int numberOfDials) {
+		super(numberOfWheels, name, numOfDoors);
 		this.setNumberOfDials(numberOfDials);
 
 	}

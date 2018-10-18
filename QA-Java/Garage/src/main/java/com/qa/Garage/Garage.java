@@ -22,17 +22,14 @@ public class Garage {
 	public static int costByVehicleType(Vehicle vehicle) {
 		int cost = 0;
 		if (vehicle instanceof Car) {
-			cost = 1000;
-			if (vehicle.isRaceCar()) {
-				cost = 2000;
-			}
-		} else if (vehicle instanceof Lorry) {
 			cost = 1500;
+		} else if (vehicle instanceof Lorry) {
+			cost = 1000;
 		} else if (vehicle instanceof Motorcycle) {
-			cost = 4000;
+			cost = 2000;
 		} else {
 			System.out.println("That vehicle is not allowed");
-			cost = 100;
+			cost = 50;
 		}
 		return cost;
 	}
@@ -53,13 +50,13 @@ public class Garage {
 
 	public List<Vehicle> removeVehicle(Vehicle vehicle) {
 		vehicleList.remove(vehicle);
-		System.out.println(vehicle.getName() + " has been removed from garage");
+		System.out.println(vehicle.getName() + " has been removed from garage:"+"\n");
 		return vehicleList;
 	}
 
 	public List<Vehicle> fixVehicle(Vehicle vehicle) {
 		removeVehicle(vehicle);
-		System.out.println("cost: " + costByVehicleType(vehicle));
+		System.out.println("Cost: " + costByVehicleType(vehicle));
 		return vehicleList;
 	}
 

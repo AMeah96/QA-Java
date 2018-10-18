@@ -3,8 +3,8 @@ package com.qa.Garage;
 public class Lorry extends Vehicle{
 	private int weightCapacity;
 
-	public Lorry(int numberOfWheels, String name, boolean isRaceCar, int weightCapacity) {
-		super(numberOfWheels, name, isRaceCar);
+	public Lorry(int numberOfWheels, String name, int numOfDoors, int weightCapacity) {
+		super(numberOfWheels, name, numOfDoors);
 		this.weightCapacity = weightCapacity;
 
 	}

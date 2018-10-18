@@ -4,10 +4,10 @@ public class Vehicle {
 
 	private int numberOfWheels;
 	private String name;
-	private boolean isRaceCar;
+	private int numOfDoors;
 
-	public Vehicle(int numberOfWheels, String name, boolean isRaceCar) {
-		this.isRaceCar = isRaceCar;
+	public Vehicle(int numberOfWheels, String name, int numOfDoors) {
+		this.numOfDoors = numOfDoors;
 		this.name = name;
 		this.numberOfWheels = numberOfWheels;
 	}
@@ -28,12 +28,12 @@ public class Vehicle {
 		this.name = name;
 	}
 
-	public boolean isRaceCar() {
-		return isRaceCar;
+	public int getNumOfDoors() {
+		return numOfDoors;
 	}
 
-	public void setRaceCar(boolean isRaceCar) {
-		this.isRaceCar = isRaceCar;
+	public void setNumOfDoors(int numOfDoors) {
+		this.numOfDoors = numOfDoors;
 	}
 
 }
